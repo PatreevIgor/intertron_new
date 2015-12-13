@@ -1,0 +1,133 @@
+<html>
+
+<head>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+
+  <title>Главная</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+  <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="stylesheet" href="/assets/style.css" media="screen">
+  <!--[if lte IE 7]><link rel="stylesheet" href="style.ie7.css" media="screen" /><![endif]-->
+  <link rel="stylesheet" href="/assets/style.responsive.css" media="all">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Noto+Sans&amp;subset=latin">
+  <script src="/assets/jquery.js"></script>
+  <script src="/assets/script.js"></script>
+  <script src="/assets/script.responsive.js"></script>
+  <style>.art-content .art-postcontent-0 .layout-item-0 { margin-bottom: 10px;  }
+    .art-content .art-postcontent-0 .layout-item-1 { border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-color:#D9D9D9;border-right-color:#D9D9D9;border-bottom-color:#D9D9D9;border-left-color:#D9D9D9;  }
+    .art-content .art-postcontent-0 .layout-item-2 { color: #2B2B2B; padding-right: 10px;padding-left: 10px;  }
+    .ie7 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+    .ie6 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+  </style>
+</head>
+<body>
+
+
+
+
+  <div id="art-main">
+    <div class="art-sheet clearfix">
+      <nav class="art-nav">
+        <ul class="art-hmenu">
+          <li><a href="/">Главная</a></li>
+          <li><a href="/orders">Заказы</a></li>
+        </ul>
+        <div class="right">
+          <% if user_signed_in? %>
+          Logged in as <strong><%= current_user.email %></strong>.
+          <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+          <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+          <% else %>
+          <%= link_to "Регистрация", new_user_registration_path, :class => 'navbar-link'  %> |
+          <%= link_to "Вход в личный кабинет", new_user_session_path, :class => 'navbar-link'  %>
+          <% end %>
+        </div>
+      </nav>
+      <header class="art-header">
+        <div class="art-shapes">
+          <div class="art-object260529295" data-left="0.09%"></div>
+          <div class="art-object157058295" data-left="99.91%"></div>
+          <div class="art-object1865807942" data-left="48.94%"></div>
+          <div class="art-object1302216706" data-left="51.91%"></div>
+        </div>
+        <h1 class="art-headline" data-left="47.64%">
+          <a href="#">Автоклавы для стерилизации консервов</a>
+        </h1>
+        <h2 class="art-slogan" data-left="49.57%">Телефоны: +37529 7379222 (МТС) или +37529 3319156 (Velcom)</h2>
+      </header>
+      <div class="art-layout-wrapper">
+        <div class="art-content-layout">
+          <div class="art-content-layout-row">
+            <div class="art-layout-cell art-sidebar1"><div class="art-block clearfix">
+              <div class="art-blockheader">
+                <h3 class="t">Советы покупателю:</h3>
+              </div>
+              <div class="art-blockcontent">
+                <ul>
+                  <li style="text-align: left;">
+                    <span style="font-size: 14px;">Если вы ведете не маленькое домашнее хозяйство, занимаетесь охотой или рыбалкой и собираетесь часто готовить закатки, тогда Вам следует приобрести автоклав <span style="font-weight: bold;">на 30 литров</span>.&nbsp;<br></span>
+                  </li>
+                  <li style="text-align: left;">
+                    <span style="font-size: 14px;">Если вы проживаете в городе и в течении года всего лишь &nbsp;пару раз ездите на дачу, тогда Вам вполне будет достаточно автоклава <span style="font-weight: bold;">на 24 литра</span>.</span>
+                  </li><li style="text-align: left;">
+                  <span style="font-size: 14px;">Не рекомендуем покупать автоклав <span style="font-weight: bold;">на 20 литров</span>,&nbsp;<span style="color: rgb(64, 64, 64); text-align: justify;">так как размеры практически такие же как и у 24-х литрового, а вместительность пол-литровых банок в два раза меньше.&nbsp;</span></span>
+                </li>
+                <li style="text-align: left;">
+                  <span style="font-size: 14px;"><span style="text-align: justify;">Отличным решение будет <span style="font-weight: bold;">подарить автоклав</span> кому-нибудь из близких или родных на любые праздники.</span><br></span>
+                </li>
+                <li style="text-align: left;">
+                  <span style="font-size: 14px;">Рекомендуем после пользования автоклавом <span style="font-weight: bold;">просушить</span> его и хранить в сухом месте.</span>
+                </li>
+                <li style="text-align: left;">
+                  <span style="font-size: 14px;">На белорусском рынке имеются в наличии и <span style="font-weight: bold;">российские автоклавы</span>, стоимостью от 5 млн. рублей и из нержавейки. Процесс &nbsp;изготовления в таких установках занимает около 10 - 12 часов, а так же сама установка имеет большие размеры.</span>
+                </li>
+                <li style="text-align: left;">
+                  <span style="font-size: 14px;">В автоклаве можно готовить продукцию как <span style="font-weight: bold;">в стеклянных</span>, так и <span style="font-weight: bold;">в железных банках</span>, для которых дополнительно необходимо специальное оборудование. По стоимости одна железная банка обойдется примерно столько же, сколько стоит обычная стеклянная.</span>
+                </li>
+                <li>
+                  <span style="font-size: 14px;">Для того что бы <span style="font-weight: bold;">закатки не по взрывались</span> необходимо соблюсти два основных правила: не долаживать продукцию до крышки банки&nbsp;на 1,5 - 2 см. и использовать свежие продукты, так как у испорченных повышенное газовыделение, за счет имеющихся там бактерий.</span>
+                </li>
+                <li
+                ><span style="font-size: 14px; font-weight: bold;">Рецепт свинины тушеной в автоклаве: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span style="font-size: 14px;">Ингредиенты на пол-литровую банку: 480 г. мяса, 5 г. соли, 7 г. лука репчатого, перец черный горошек - 3 шт, лавровый лист - &nbsp;1 шт. &nbsp; &nbsp;Технология приготовления: Вымыть банки и крышки, нарезать мясо на куски массой 50 - 100 г., нарезать лук, уложить на дно банки перец черный и лавровый лист, перемешать мясо с нарезанным луком, заполнить банку таким образом, что бы оставался воздушный зазор в 1,5 - 2 см (согласно инструкции), закатать банки, начать процесс стерилизации.</span>
+              </li>
+
+              <li
+              ><span style="font-size: 14px; font-weight: bold;">Если Вы где-то нашли дешевле, сообщите нам об этом и Мы снизим для Вас цену. </span><span style="font-size: 14px;"></span>
+            </li>
+
+
+              <li
+              ><span style="font-size: 14px; font-weight: bold;">За любой консультацией</span><span style="font-size: 14px;"></span> обращайтесь по телефонам: <span style="font-size: 14px; font-weight: bold;">+37529 7379222 (МТС) или +37529 3319156 (VELCOM) </span> 
+            </li>
+          </ul><p>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="art-layout-cell art-content"><article class="art-post art-article">
+
+    <%= yield %>
+
+  </article></div>
+</div>
+</div>
+</div><footer class="art-footer">
+<p>ИП Патреев И.И., УНП:691751618</p><p>Телефоны: +37529 7379222 или +37529 3319156</p><p>Минск, 2015<br></p>
+</footer>
+
+</div>
+<p class="art-page-footer">
+  <!-- <span id="art-footnote-links"><a href="http://www.artisteer.com/" target="_blank">Web Template</a> created with Artisteer.</span> -->
+</p>
+</div>
+
+
+
+</body>
+
+
+</html>
+

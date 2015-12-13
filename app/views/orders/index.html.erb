@@ -1,0 +1,50 @@
+
+<h1>Список заказов:</h1>
+
+
+<table class="art-article" style="width: 100%; ">
+  <tbody>
+    <tr>
+      <td style="width: 20%; text-align: center; "><span style="font-weight: bold; text-align: center; ">Выбор товара:</span><br>
+      </td>
+      <td style="width: 10%; text-align: center; "><span style="font-weight: bold; text-align: center; ">Количество:</span>
+      </td>
+      <td style="width: 23%; text-align: center; "><span style="font-weight: bold; text-align: center; ">Адрес:</span><br>
+      </td>
+      <td style="width: 23%; text-align: center; "><span style="font-weight: bold; text-align: center; ">ФИО:</span><br>
+      </td>
+      <td style="width: 23%; text-align: center; "><span style="font-weight: bold; text-align: center; ">Телефон:</span><br>
+      </td>
+    </tr>
+    <tr>
+     <% @orders.each do |order| %>
+     <td style="width: 20%; text-align: center; ">
+      <%= order.name %>
+    </td>
+    <td style="width: 20%; text-align: center; ">
+      <%= order.count %>
+    </td>
+    <td style="width: 20%; text-align: center;">
+      <%= order.adress %>
+    </td>
+    <td style="width: 20%; text-align: center;">
+      <%= order.user_name %>
+    </td>
+    <td style="width: 20%; text-align: center;">
+      <%= order.telephone %>
+    </td>
+  </tr>
+  <tr>
+   <% if user_signed_in? %>
+    <% if current_user.email == 'patreewigor@yandex.ru' %>
+      <td><%= link_to 'Show', order %></td>
+      <td><%= link_to 'Edit', edit_order_path(order) %></td>
+      <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <% end %>
+   <% end %>
+   </tr>
+
+   <% end %>
+ </tbody>
+</table>
+
