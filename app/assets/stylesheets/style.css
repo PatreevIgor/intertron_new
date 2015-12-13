@@ -17,6 +17,7 @@ color:gray;
 }
 a { 
     text-decoration: none;
+    color:orange;
    }
 
 .center {
@@ -25,9 +26,6 @@ text-align: center;
 
 .button_bottom_form_order {
   width: 600px;
-a:hover {
-color:gray;
-}
   display: inline-block;
   color: black;
   text-decoration: none;
