@@ -7,10 +7,10 @@ margin: 6 10 0 0;
 }
 
 a:visited {
-color:gray;
+color:orange; 
 }
 a:hover {
-color:orange;
+color:gray;
 }
 a:active {
 color:gray;
@@ -25,7 +25,9 @@ text-align: center;
 
 .button_bottom_form_order {
   width: 600px;
-
+a:hover {
+color:gray;
+}
   display: inline-block;
   color: black;
   text-decoration: none;
