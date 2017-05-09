@@ -2,6 +2,8 @@ class HomeController < ApplicationController
   def index
     @orders = Order.all
     @order = Order.new
+    @product_first = Product.first
+    @product_last = Product.last
   end
 
   private
