@@ -9,6 +9,8 @@ gem 'unicorn'
 
 gem 'non-stupid-digest-assets', '~> 1.0.4'
 
+gem 'nokogiri', '1.6.7'
+
 gem 'devise'
 # gem 'execjs'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
