@@ -31,4 +31,4 @@ production:
   username: patreewi_avtok44
   password: g90HZGxP
   host: mysql6.locum.ru
-  socket: /var/run/mysqld/mysqld.sock
+  # socket: /var/run/mysqld/mysqld.sock
