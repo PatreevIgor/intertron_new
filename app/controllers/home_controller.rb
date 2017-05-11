@@ -4,6 +4,7 @@ class HomeController < ApplicationController
     @order = Order.new
     @product_first = Product.first
     @product_last = Product.last
+
   end
 
   private
